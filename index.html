@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor y Analizador de Código</title>
+    <link rel="stylesheet" href="style.css">
+</head>     
+<body>
+    <div class="container">
+        <h1>Traductor y Analizador de Código</h1>
+        
+        <!-- Entrada de código Java -->
+        <textarea id="javaInput" placeholder="Escribe tu código Java aquí..."></textarea>
+        
+        <!-- Botones -->
+        <button id="analyzeButton">Analizar</button>
+        <button id="translateButton">Traducir</button>
+        
+        <!-- Salida de código JavaScript -->
+        <h2>Resultado en JavaScript</h2>
+        <textarea id="jsOutput" placeholder="Resultado en JavaScript..." readonly></textarea>
+        
+        <!-- Salidas adicionales -->
+        <h2>Análisis Léxico</h2>
+        <pre id="lexicalOutput"></pre>
+
+        <h2>Árbol Sintáctico (AST)</h2>
+        <pre id="astOutput"></pre>
+
+        <h2>Tabla de Símbolos</h2>
+        <pre id="symbolTableOutput"></pre>
+
+        <h2>Código Intermedio</h2>
+        <pre id="intermediateCodeOutput"></pre>
+    </div>
+    <script src="translator.js" type="module"></script>
+</body>
+</html>
